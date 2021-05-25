@@ -10,7 +10,6 @@ public class Gugudan {
     //한줄씩
     protected static void test1() {
 		for(int dan : new int[] {1,2,3,4,5,6,7,8,9}) {
-    		
     		int[] result = new int[9];
         	
         	for(int i = 0; i<result.length; i++) {
@@ -20,7 +19,6 @@ public class Gugudan {
         	for(int i : result) {
         		System.out.println(i);
         	}
-        	
         	System.out.println("---------");
     	}
     }
