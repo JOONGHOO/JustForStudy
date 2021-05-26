@@ -1,12 +1,15 @@
 package basic_2_Gugudan;
 
+import java.util.Scanner;
+
 public class Gugudan {
     public static int[] tempArr = new int[] {1,2,3,4,5,6,7,8,9};
 	
     public static void main(String[] args) {
 //    	test1();
 //    	test2();
-    	test3();
+//    	test3();
+    	inputValueGugudan();
     }
     
     //한줄씩
@@ -55,4 +58,26 @@ public class Gugudan {
     		System.out.println((result[i]));
     	}
     }
+    
+    //두 수를 입력받아서 구구단하기
+    //8,7 => 8*1 ~ 8*7
+    protected static void inputValueGugudan() {
+    	System.out.println("구구단을 위한 두 수를 입력해주세요 ex)8,7");
+    	System.out.print(": ");
+        Scanner scanner = new Scanner(System.in);
+        String[] splitedValue = scanner.nextLine().split(",");
+        int first = Integer.parseInt(splitedValue[0]);
+        int second = Integer.parseInt(splitedValue[1]);
+        
+        for(int i=1; i<=second; i++) {
+        	System.out.println(first + " * " + i + " = " + (i*first));
+        }
+    }
 }
+
+
+
+
+
+
+
