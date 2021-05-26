@@ -1,4 +1,4 @@
-package Basic_2_Gugudan;
+package basic_2_Gugudan;
 
 public class Gugudan {
     public static int[] tempArr = new int[] {1,2,3,4,5,6,7,8,9};
