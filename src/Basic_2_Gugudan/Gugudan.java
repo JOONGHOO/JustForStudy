@@ -1,6 +1,8 @@
 package Basic_2_Gugudan;
 
 public class Gugudan {
+    public static int[] tempArr = new int[] {1,2,3,4,5,6,7,8,9};
+	
     public static void main(String[] args) {
 //    	test1();
 //    	test2();
@@ -9,7 +11,7 @@ public class Gugudan {
     
     //한줄씩
     protected static void test1() {
-		for(int dan : new int[] {1,2,3,4,5,6,7,8,9}) {
+		for(int dan : tempArr) {
     		int[] result = new int[9];
         	
         	for(int i = 0; i<result.length; i++) {
@@ -25,8 +27,8 @@ public class Gugudan {
     
     //단씩
     protected static void test2() {
-    	for(int dan : new int[] {1,2,3,4,5,6,7,8,9}) {
-    		for(int val : new int[] {1,2,3,4,5,6,7,8,9}) {
+    	for(int dan : tempArr) {
+    		for(int val : tempArr) {
     			System.out.print(val+"*"+dan+"="+(dan*val) + "\t");
     			if(val==9) System.out.println("");
     		}
