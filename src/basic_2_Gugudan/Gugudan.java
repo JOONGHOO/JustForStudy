@@ -72,6 +72,7 @@ public class Gugudan {
         for(int i=1; i<=second; i++) {
         	System.out.println(first + " * " + i + " = " + (i*first));
         }
+        scanner.close();
     }
 }
 
