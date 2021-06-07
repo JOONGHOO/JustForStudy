@@ -1,5 +1,8 @@
 package basic_3_Singleton;
 
+import java.util.List;
+import java.util.ArrayList;
+
 public class SingletonMain {
 
 	public static void main(String[] args) {
