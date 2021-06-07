@@ -30,7 +30,6 @@ public class Species<T> {
 //1.       동물
 //2.  유인원
 //3.  사람     사자
-
 class Animal{
 	private String name;
 	
@@ -55,14 +54,12 @@ class Simian extends Animal{
 }
 
 class Human extends Simian{
-
 	public Human(String name) {
 		super(name);
 	}
 }
 
 class Lion extends Animal{
-
 	public Lion(String name) {
 		super(name);
 	}
