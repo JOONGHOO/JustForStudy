@@ -15,6 +15,15 @@ public class SingletonMain {
 		
 		TempClass t2 = new TempClass();
 		System.out.println(t2);
+		
+		//////////////////////////////////////
+		//Console Result
+		//////////////////////////////////////
+		//basic_3_Singleton.Singleton@5e91993f
+		//basic_3_Singleton.Singleton@5e91993f
+		//basic_3_Singleton.TempClass@123a439b
+		//basic_3_Singleton.TempClass@7de26db8
+		//////////////////////////////////////
 	}
 }
 
