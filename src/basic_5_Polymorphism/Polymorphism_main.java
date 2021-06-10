@@ -25,6 +25,15 @@ public class Polymorphism_main {
 		moveAnimal(new Animal());
 		moveAnimal(new Human());
 		moveAnimal(new Tiger());
+		/*
+		 ------------------------
+		 Console
+		 ------------------------
+		 동물이 움직인다.
+		 사람이 움직인다.
+		 호랑이가 움직인다.
+         ------------------------
+		*/
 	}
 	
 	public static void moveAnimal(Animal animal) {
