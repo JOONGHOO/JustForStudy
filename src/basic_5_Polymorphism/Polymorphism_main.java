@@ -22,9 +22,14 @@ class Tiger extends Animal{
 
 public class Polymorphism_main {
 	public static void main(String[] args) {
-		moveAnimal(new Animal());
-		moveAnimal(new Human());
-		moveAnimal(new Tiger());
+//		moveAnimal(new Animal());
+//		moveAnimal(new Human());
+//		moveAnimal(new Tiger());
+		
+		Animal[] animals = { new Animal(), new Human(), new Tiger()};
+		for(Animal animal : animals) {
+			animal.move();
+		}
 		/*
 		 ------------------------
 		 Console
