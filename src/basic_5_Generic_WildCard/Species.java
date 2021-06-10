@@ -1,4 +1,4 @@
-package basic_4_Generic_WildCard;
+package basic_5_Generic_WildCard;
 
 public class Species<T> {
     private String name;
