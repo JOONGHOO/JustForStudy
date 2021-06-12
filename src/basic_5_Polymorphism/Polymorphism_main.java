@@ -11,6 +11,10 @@ class Human extends Animal{
 	public void move() {
 		System.out.println("사람이 움직인다.");
 	}
+	
+	public void readBook() {
+		System.out.println("사람이 책을 읽습니다.");
+	}
 }
 
 class Tiger extends Animal{
@@ -28,7 +32,7 @@ public class Polymorphism_main {
 		
 		Animal[] animals = { new Animal(), new Human(), new Tiger()};
 		for(Animal animal : animals) {
-			animal.move();
+			moveAnimal(animal);
 		}
 		/*
 		 ------------------------
@@ -43,5 +47,11 @@ public class Polymorphism_main {
 	
 	public static void moveAnimal(Animal animal) {
 		animal.move();
+		
+		//다운캐스팅
+		if(animal instanceof Human) {
+			Human human = (Human)animal;
+			human.readBook();
+		}
 	}
 }

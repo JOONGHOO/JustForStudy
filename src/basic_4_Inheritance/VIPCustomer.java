@@ -28,4 +28,9 @@ class VIPCustomer extends Customer{
     	bonusPoint += price * bonusRatio;
     	return price - (int)(price * saleRatio);
     }
+    
+    @Override
+    public String showCustomerInfo() {
+    	return super.showCustomerInfo() + " 담당 상담원 아이디는 : " + this.agentID;
+    }
 }
